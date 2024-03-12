@@ -1,7 +1,4 @@
-The link to my second private repository where I have committed the first part of the project because of the problems
-with this repository: https://github.com/Danven2003/PPY_FAST_API.git
 
-The final project of Python;
 
 The students:
 1) s25205 Danila Venski,
