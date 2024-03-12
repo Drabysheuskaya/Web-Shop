@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/static/css/file.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+          crossorigin="anonymous">
+
+    <title>ByPol</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a href="/">
+            <span class="navbar-brand mb-0 h1">ByPol</span>
+        </a>
+    </div>
+</nav>
+<div class="container mt-4">
+    <h1 style="text-align: center">Personal profile</h1>
+    <hr>
+    <br>
+    <div style="text-align: center">
+        <br>
+        <br>
+        <h2>{{ user.name }}</h2>
+        <br>
+        Email: <b>{{ user.email }}</b>
+        <br>
+        Name: <b>{{ user.first_name }}</b>
+        <br>
+        Surname: <b>{{ user.last_name }}</b>
+        <br>
+        Telephone number: <b>{{ user.telephone_number }}</b>
+        <br>
+        Date of birth: <b>{{ user.date_of_birth }}</b>
+        <br>
+        Date of registration: <b>{{ user.date_of_registration }}</b>
+        <br>
+        <br>
+        <a class="btn btn-dark mb-3" style="text-align: center; width: 100%" href="/my/products">
+            My products
+        </a>
+        <a class="btn btn-dark mb-3" style="text-align: center; width: 100%" href="/users/likedProducts">
+            Favourite products
+        </a>
+        <form action="/logout" method="get">
+            <button type="submit" style="text-align: center; width: 100%" class="btn btn-danger mb-2">
+                Logout
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+</html>
